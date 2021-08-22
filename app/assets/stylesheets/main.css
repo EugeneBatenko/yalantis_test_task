@@ -1,0 +1,22 @@
+.user-item {
+
+}
+
+.user-item img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+ul {
+    margin: 20px 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}

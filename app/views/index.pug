@@ -1,0 +1,32 @@
+extends layout
+block content
+  section
+    h1 User upload
+
+    form(action='/api/user', method='POST', enctype='multipart/form-data' id='addUser')
+      .mb-2
+        label.form-label(for='firstName') First Name
+        input.form-control#firstName(type='text', name='first_name')
+      .mb-2
+        label.form-label(for='lastName') Last name
+        input.form-control#lastName(type='text', name='last_name')
+      .mb-2
+        label.form-label(for='email') Email
+        input.form-control#email(type='email', name='email')
+      .mb-4
+        label.form-label(for='image') Default file input
+        input.form-control#image(type='file', name='image')
+      .d-grid.gap-1
+        button.btn.btn-primary(type='submit') Save
+
+    ul.list-group
+      each item in users
+        li.user-item.list-group-item.list-group-item-action
+          a.d-flex.align-items-center(href=`/user/${item._id}`)
+            img(src=`${item.image}`)
+            span.me-2
+              = item.first_name
+            span.me-2
+              = item.last_name
+            span
+              = item.email

@@ -1,0 +1,27 @@
+{
+  "name": "yalantis_test_task",
+  "version": "1.0.0",
+  "description": "Test task for Yalantis Node.js course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo",
+    "start": "nodemon app.js -e js",
+    "lint": "npx eslint app/**/*.js"
+  },
+  "author": "Eugene Batenko",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2",
+    "sharp": "^0.29.0",
+    "validator": "^13.6.0"
+  },
+  "type": "module"
+}

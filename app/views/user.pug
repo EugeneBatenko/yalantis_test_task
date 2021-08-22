@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  section
+    img(src=`${user.image}`)
+    h1
+      = user.first_name
+    h2
+      = user.last_name
+    p
+      = user.email
+
+
+
+    a(href='/') Back to main
